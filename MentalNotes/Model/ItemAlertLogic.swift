@@ -1,10 +1,7 @@
 //
 //  ItemAlertLogic.swift
 //  MentalNotes
-//
-//  Created by user238361 on 8/26/23.
-//  Copyright © 2023 App Brewery. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -14,21 +11,21 @@ struct ItemAlertLogic{
     
     func displayAlert(rating: Int16, type: String){
         /*var alert = UIAlertController(title: "Add New Mental Note", message: "", preferredStyle: .alert)
-        
-        alert = UIAlertController(title: "\n\n\n\n\n", message: "", preferredStyle: .alert)
-        alert.view.addObserver(self, forKeyPath: "itemChange", options: NSKeyValueObservingOptions.new, context: nil)
-        //alert.preferredContentSize = 25
-        let textView = UITextView(frame: CGRect(x: 10, y: 0, width: 250, height: 50))
-        //let textViewDelegate = UITextViewDelegate.self
-        //let textView = UITextView()
-        textView.text = itemArray[indexPath.row].title
-        textView.backgroundColor = .clear
-        textView.isScrollEnabled = true
-        NotificationCenter.default.addObserver(
-                self,
-                selector: #selector(textViewDidChangeWithNotification(_:)),
-                name: UITextView.textDidChangeNotification,
-                object: nil
+                
+                alert = UIAlertController(title: "\n\n\n\n\n", message: "", preferredStyle: .alert)
+                alert.view.addObserver(self, forKeyPath: "itemChange", options: NSKeyValueObservingOptions.new, context: nil)
+                //alert.preferredContentSize = 25
+                let textView = UITextView(frame: CGRect(x: 10, y: 0, width: 250, height: 50))
+                //let textViewDelegate = UITextViewDelegate.self
+                //let textView = UITextView()
+                textView.text = itemArray[indexPath.row].title
+                textView.backgroundColor = .clear
+                textView.isScrollEnabled = true
+                NotificationCenter.default.addObserver(
+                        self,
+                        selector: #selector(textViewDidChangeWithNotification(_:)),
+                        name: UITextView.textDidChangeNotification,
+                        object: nil
             )
         
         alert.view.addSubview(textView)
